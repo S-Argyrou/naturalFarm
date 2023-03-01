@@ -1,0 +1,50 @@
+/* Set typography */
+body,
+header,
+main,
+footer {
+    font-family: "Poppins";
+}
+
+/* Set card dimensions and buttons arrangement. */
+.card .img-fit {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.card { 
+    height: 100%;   
+}
+
+.card img:hover {
+    transform: scale(1.15);
+    transition: all 0.3s;
+}
+.card-body {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.card-text {   
+    flex-grow: 1;
+}
+
+/* Set responsive card images on different devices. */
+@media (max-width: 767.98px) {
+    .card .img-fit {
+        aspect-ratio: 1.45 / 1;
+        object-fit: cover;
+    }
+}
+
+/* Set logo dimensions. */
+.logo {
+    max-width: 50px;    
+}
+
+.logo-nav {    
+    transform: scale(0.5);   
+}
+
+
